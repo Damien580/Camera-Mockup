@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Document</title>
 </head>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
       <span class="navbar-brand mb-0 h1">Megapixels</span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -65,14 +66,20 @@
     </div>
   </div>
 
-  <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-mdb-ride="carousel" style="max-width: 500px; margin: 0 auto;">
+    <div class="carousel-inner mb-5">
+      <!-- Carousel items -->
+    </div>
+  
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
   <div class="carousel-indicators" style="margin-bottom: -20px;">
     <button type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="0" class="active"
@@ -187,28 +194,54 @@
     top: 0px;
     z-index: 50;
   }
-</style>
 
-<style>
   nav {
     background-color: #333;
     height: 50px;
     color: #fff;
+  }
+
+  .nav-item{
+    color: red !important;
   }
   .scrollTarget {
     margin-top: 50px;
     padding-top: 50px;
     background-color: #f2f2f2;
   }
-</style>
 
-<style>
   .container-specs {
     width: 30%;
   }
-</style>
 
-<style>
+  .carousel-img-container {
+    position: relative;
+    height: 300px; /* Adjust the height as needed */
+    margin-bottom: -30px; /* Adjust the negative margin as needed */
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .carousel-control-prev {
+    left: -50px;
+    height: 30px;
+    width: auto !important;
+    color: black;
+  }
+
+  .carousel-control-next {
+    right: -25px;
+    height: 30px;
+    width: auto !important;
+    color: black;
+  }
+
   #reviews {
     margin-top: 20px;
   }
@@ -226,9 +259,7 @@
   .review-text {
     font-style: italic;
   }
-</style>
 
-<style>
   .subscribe-section {
     text-align: center;
     padding: 20px;
@@ -257,9 +288,7 @@
     border-radius: 4px;
     cursor: pointer;
   }
-</style>
 
-<style>
   .footer {
     background-color: #333;
     color: #fff;
@@ -282,6 +311,10 @@
     margin: 0 5px;
     font-size: 18px;
     text-decoration: none;
+  }
+
+  .navbar-nav .nav-link {
+    color: red !important;
   }
 </style>
 
